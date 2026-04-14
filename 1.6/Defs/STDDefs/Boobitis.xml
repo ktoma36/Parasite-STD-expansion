@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<rjwstd.std_def>
+	<rjwparasite.parasite_def>
 		<defName>Boobitis</defName>
 		<label>boobitis</label>
 		<description>Boobitis is a highly contagious mechanite plague that causes permanent breast growth if left untreated. It was initialy created as a harmless glittertech "party drug" but has since mutated and spread to virtually every human colony.</description>
@@ -13,5 +13,5 @@
 		<appliedOnFixedBodyParts>
 			<li>Chest</li>
 		</appliedOnFixedBodyParts>
-	</rjwstd.std_def>
+	</rjwparasite.parasite_def>
 </Defs>

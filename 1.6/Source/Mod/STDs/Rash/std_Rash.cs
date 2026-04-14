@@ -4,12 +4,12 @@ using rjw;
 using System;
 using RimWorld;
 
-namespace rjwstd
+namespace rjwparasite
 {
-	public static class std_Rash
+	public static class parasite_Rash
 	{
-		public static std_def herpes = DefDatabase<std_def>.GetNamed("Herpes");
-		public static std_def warts = DefDatabase<std_def>.GetNamed("Warts");
+		public static parasite_def herpes = DefDatabase<parasite_def>.GetNamed("Herpes");
+		public static parasite_def warts = DefDatabase<parasite_def>.GetNamed("Warts");
 
 		public static readonly ThoughtDef saw_rash_1 = DefDatabase<ThoughtDef>.GetNamed("SawDiseasedPrivates1");
 		public static readonly ThoughtDef saw_rash_2 = DefDatabase<ThoughtDef>.GetNamed("SawDiseasedPrivates2");
@@ -24,11 +24,11 @@ namespace rjwstd
 		{
 			int tr = 0;
 
-			Hediff her = p.health.hediffSet.GetFirstHediffOfDef(std_Rash.herpes.hediff_def);
+			Hediff her = p.health.hediffSet.GetFirstHediffOfDef(parasite_Rash.herpes.hediff_def);
 			if (her != null && her.Severity >= 0.25f)
 				++tr;
 
-			Hediff war = p.health.hediffSet.GetFirstHediffOfDef(std_Rash.warts.hediff_def);
+			Hediff war = p.health.hediffSet.GetFirstHediffOfDef(parasite_Rash.warts.hediff_def);
 			if (war != null)
 				tr += war.Severity < 0.40f ? 1 : 2;
 

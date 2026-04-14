@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<HediffDef Abstract="True" ParentName="STDBase" Name="HIVBase">
+	<HediffDef Abstract="True" ParentName="PARASITEBase" Name="HIVBase">
 		<hediffClass>HediffWithComps</hediffClass>
 		<tendable>true</tendable>
 		<stages>

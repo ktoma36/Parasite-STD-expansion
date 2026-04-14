@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Severity will be set to equal (1.0 - blood_filtration) in xxx.update_std_effects -->
+	<!-- Severity will be set to equal (1.0 - blood_filtration) in xxx.update_parasite_effects -->
 	<!-- part of HIV -->
 	<HediffDef>
 		<defName>Immunodeficiency</defName>
-		<hediffClass>rjwstd.Hediff_ID</hediffClass>
+		<hediffClass>rjwparasite.Hediff_ID</hediffClass>
 		<defaultLabelColor>(1.0, 0.0, 0.0)</defaultLabelColor>
 		<label>Immunodeficiency</label>
 		<makesSickThought>false</makesSickThought>

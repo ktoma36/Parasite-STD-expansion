@@ -4,14 +4,14 @@ using System;
 using rjw;
 using RimWorld;
 
-namespace rjwstd
+namespace rjwparasite
 {
 	/// <summary>
 	/// add some infections
 	/// </summary>
-	public static class std_Immunodeficiency
+	public static class parasite_Immunodeficiency
 	{
-		public static std_def hiv = DefDatabase<std_def>.GetNamed("HIV");
+		public static parasite_def hiv = DefDatabase<parasite_def>.GetNamed("HIV");
 		//vanilla rimworld
 		public static readonly HediffDef immunodeficiency = DefDatabase<HediffDef>.GetNamed("Immunodeficiency");
 		public static bool is_wasting_away(Pawn p)
@@ -61,8 +61,8 @@ namespace rjwstd
 			//	log (0.10) = 24000 log (1 - x)
 			//	x = 0.00009593644334648975435114691213 = ~96 in 1 million
 			// Important Note:
-			// this function is called from Need_Sex::NeedInterval(), where it involves a needsex_tick and a std_tick to actually trigger this update_immunodeficiency.
-			// j(this is not exactly the same as the value in Need_Sex, that value is 0, but here j should be 1) std_ticks per this function called, k needsex_ticks per std_tick, 150 ticks per needsex_tick, and x is the chance per 150 ticks,
+			// this function is called from Need_Sex::NeedInterval(), where it involves a needsex_tick and a parasite_tick to actually trigger this update_immunodeficiency.
+			// j(this is not exactly the same as the value in Need_Sex, that value is 0, but here j should be 1) parasite_ticks per this function called, k needsex_ticks per parasite_tick, 150 ticks per needsex_tick, and x is the chance per 150 ticks,
 			// The new equation should be .1 = (1-x)^(24000/kj)
 			// log(.1) = (24000/kj) log(1-x),  so log(1-x)= (kj/24000) log(.1), 1-x = .1^(kj/24000), x= 1-.1^(kj/24000)
 			// Since k=10,j=1, so kj=10, new x is 1-.1^(10/24000)=0.0009589504, let it be 959/1000000
@@ -93,7 +93,7 @@ namespace rjwstd
 					p.health.HealthTick(); // Creates the immunity record
 					ImmunityRecord ir = p.health.immunity.GetImmunityRecord(HediffDefOf.WoundInfection);
 					if (ir != null)
-						ir.immunity = STD_Settings.opp_inf_initial_immunity;
+						ir.immunity = PARASITE_Settings.opp_inf_initial_immunity;
 					const string message_title = "Opportunistic Infection";
 					string message_text = "RJW_Opportunistic_Infection_Message".Translate(xxx.get_pawnname(p)).CapitalizeFirst();
 					Find.LetterStack.ReceiveLetter(message_title, message_text, LetterDefOf.ThreatSmall);

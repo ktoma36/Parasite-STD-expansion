@@ -1,13 +1,13 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace rjwstd
+namespace rjwparasite
 {
 	public class ThoughtWorker_SyphiliticThoughts : ThoughtWorker
 	{
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
-			var syp = p.health.hediffSet.GetFirstHediffOfDef(std_Syphilis.syphilis.hediff_def);
+			var syp = p.health.hediffSet.GetFirstHediffOfDef(parasite_Syphilis.syphilis.hediff_def);
 			if (syp != null)
 			{
 				if (syp.Severity >= 0.80f)

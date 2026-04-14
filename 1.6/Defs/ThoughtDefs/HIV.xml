@@ -3,7 +3,7 @@
 <Defs>
 	<ThoughtDef>
 		<defName>WastingAway</defName>
-		<workerClass>rjwstd.ThoughtWorker_WastingAway</workerClass>
+		<workerClass>rjwparasite.ThoughtWorker_WastingAway</workerClass>
 		<stages>
 			<li>
 				<label>wasting away</label>

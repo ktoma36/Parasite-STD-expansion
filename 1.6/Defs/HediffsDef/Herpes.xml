@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<HediffDef ParentName="STDBase">
+	<HediffDef ParentName="PARASITEBase">
 		<defName>Herpes</defName>
 		<label>Herpes</label>
 		<description>Genital sores that spread through sexual contact.</description>

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3FC2D442-19B8-4CF9-9D35-CD13B6AC7B28}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>rjwstd</RootNamespace>
-    <AssemblyName>RimJobWorldSTD</AssemblyName>
+    <RootNamespace>rjwparasite</RootNamespace>
+    <AssemblyName>RimJobWorldparasite</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,7 +40,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RJW">
-      <HintPath>..\..\..\..\rjw-6.0.0\1.6\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\..\..\rjw\1.6\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -55,26 +55,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Properties\AssemblyInfo.cs" />
-    <Compile Include="harmony_add_stds.cs" />
-    <Compile Include="harmony_stds_generator.cs" />
-    <Compile Include="harmony_update_stds.cs" />
-    <Compile Include="STDs\Boobitis\harmony_Boobitis.cs" />
-    <Compile Include="STDs\HIV\harmony_Immunodeficiency.cs" />
-    <Compile Include="STDs\Rash\harmony_Rash.cs" />
-    <Compile Include="STDs\Rash\std_Rash.cs" />
-    <Compile Include="STDs\HIV\Hediff_ID.cs" />
-    <Compile Include="std.cs" />
-    <Compile Include="STDBase.cs" />
-    <Compile Include="STDs\Boobitis\std_Boobitis.cs" />
-    <Compile Include="STDs\Syphilis\harmony_Syphilis.cs" />
-    <Compile Include="std_def.cs" />
-    <Compile Include="STDs\HIV\std_Immunodeficiency.cs" />
-    <Compile Include="std_spreader.cs" />
-    <Compile Include="STDs\Syphilis\std_Syphilis.cs" />
-    <Compile Include="std_updater.cs" />
-    <Compile Include="STDs\Rash\ThoughtWorker_ItchyCrotch.cs" />
-    <Compile Include="STDs\Syphilis\ThoughtWorker_SyphiliticThoughts.cs" />
-    <Compile Include="STDs\HIV\ThoughtWorker_WastingAway.cs" />
+    <Compile Include="harmony_add_parasites.cs" />
+    <Compile Include="harmony_parasites_generator.cs" />
+    <Compile Include="harmony_update_parasites.cs" />
+    <Compile Include="parasites\Boobitis\harmony_Boobitis.cs" />
+    <Compile Include="parasites\HIV\harmony_Immunodeficiency.cs" />
+    <Compile Include="parasites\Rash\harmony_Rash.cs" />
+    <Compile Include="parasites\Rash\parasite_Rash.cs" />
+    <Compile Include="parasites\HIV\Hediff_ID.cs" />
+    <Compile Include="parasite.cs" />
+    <Compile Include="PARASITEBase.cs" />
+    <Compile Include="parasites\Boobitis\parasite_Boobitis.cs" />
+    <Compile Include="parasites\Syphilis\harmony_Syphilis.cs" />
+    <Compile Include="parasite_def.cs" />
+    <Compile Include="parasites\HIV\parasite_Immunodeficiency.cs" />
+    <Compile Include="parasite_spreader.cs" />
+    <Compile Include="parasites\Syphilis\parasite_Syphilis.cs" />
+    <Compile Include="parasite_updater.cs" />
+    <Compile Include="parasites\Rash\ThoughtWorker_ItchyCrotch.cs" />
+    <Compile Include="parasites\Syphilis\ThoughtWorker_SyphiliticThoughts.cs" />
+    <Compile Include="parasites\HIV\ThoughtWorker_WastingAway.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

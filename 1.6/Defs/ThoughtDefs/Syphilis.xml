@@ -3,7 +3,7 @@
 <Defs>
 	<ThoughtDef>
 		<defName>SyphiliticThoughts</defName>
-		<workerClass>rjwstd.ThoughtWorker_SyphiliticThoughts</workerClass>
+		<workerClass>rjwparasite.ThoughtWorker_SyphiliticThoughts</workerClass>
 		<stages>
 			<li>
 				<label>syphilitic thoughts</label>

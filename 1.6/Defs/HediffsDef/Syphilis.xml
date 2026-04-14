@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<HediffDef ParentName="STDBase">
+	<HediffDef ParentName="PARASITEBase">
 		<defName>Syphilis</defName>
 		<description>A bacterial infection that spreads through sexual contact.</description>
 		<label>Syphilis</label>

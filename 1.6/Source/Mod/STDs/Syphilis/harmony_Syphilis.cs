@@ -4,17 +4,17 @@ using System;
 using rjw;
 using RimWorld;
 
-namespace rjwstd
+namespace rjwparasite
 {
-	[HarmonyPatch(typeof(std_updater), "update")]
-	static class std_updater_Syphilis
+	[HarmonyPatch(typeof(parasite_updater), "update")]
+	static class parasite_updater_Syphilis
 	{
 		[HarmonyPostfix]
-		private static void updateSTD(Pawn p)
+		private static void updateparasite(Pawn p)
 		{
 			try
 			{
-				std_Syphilis.update(p);
+				parasite_Syphilis.update(p);
 			}
 			catch (Exception e)
 			{

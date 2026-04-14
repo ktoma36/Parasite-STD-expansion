@@ -3,7 +3,7 @@
 <Defs>
 	<ThoughtDef>
 		<defName>ItchyCrotch</defName>
-		<workerClass>rjwstd.ThoughtWorker_ItchyCrotch</workerClass>
+		<workerClass>rjwparasite.ThoughtWorker_ItchyCrotch</workerClass>
 		<stages>
 			<li>
 				<label>itchy crotch</label>

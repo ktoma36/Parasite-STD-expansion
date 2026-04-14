@@ -1,13 +1,13 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace rjwstd
+namespace rjwparasite
 {
 	public class ThoughtWorker_ItchyCrotch : ThoughtWorker
 	{
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
-			int sev = std_Rash.genital_rash_severity(p);
+			int sev = parasite_Rash.genital_rash_severity(p);
 			if (sev <= 0)
 				return ThoughtState.Inactive;
 			else if (sev == 1)

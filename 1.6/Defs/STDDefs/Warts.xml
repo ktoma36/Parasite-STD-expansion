@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<rjwstd.std_def>
+	<rjwparasite.parasite_def>
 		<defName>Warts</defName>
 		<label>warts</label>
 		<description>Genital warts are unsightly and cause an itching/burning sensation. They are easily treated and never fatal.</description>
@@ -11,5 +11,5 @@
 		<appliedOnFixedBodyParts>
 			<li>Genitals</li>
 		</appliedOnFixedBodyParts>
-	</rjwstd.std_def>
+	</rjwparasite.parasite_def>
 </Defs>

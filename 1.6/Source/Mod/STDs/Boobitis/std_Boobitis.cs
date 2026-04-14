@@ -4,11 +4,11 @@ using System;
 using rjw;
 using RimWorld;
 
-namespace rjwstd
+namespace rjwparasite
 {
-	public static class std_Boobitis
+	public static class parasite_Boobitis
 	{
-		public static std_def boobitis = DefDatabase<std_def>.GetNamed("Boobitis");
+		public static parasite_def boobitis = DefDatabase<parasite_def>.GetNamed("Boobitis");
 		public static void update(Pawn pawn)
 		{
 			if (pawn.health.hediffSet.HasHediff(boobitis.hediff_def))

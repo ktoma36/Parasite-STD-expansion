@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<HediffDef Name="STDBase" Abstract="True">
+	<HediffDef Name="PARASITEBase" Abstract="True">
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
 		<initialSeverity>0.010</initialSeverity>

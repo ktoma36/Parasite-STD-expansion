@@ -4,17 +4,17 @@ using rjw;
 using System;
 using RimWorld;
 
-namespace rjwstd
+namespace rjwparasite
 {
 	[HarmonyPatch(typeof(AfterSexUtility), "think_about_sex", new Type[] {typeof(Pawn), typeof(Pawn), typeof(bool), typeof(SexProps), typeof(bool)})]
-	static class Aftersex_STDThoughtApply
+	static class Aftersex_parasiteThoughtApply
 	{
 		[HarmonyPostfix]
-		private static void ThinkAboutDiseasesStdPatch(Pawn pawn, Pawn partner, bool isReceiving, SexProps props, bool whoring = false)
+		private static void ThinkAboutDiseasesparasitePatch(Pawn pawn, Pawn partner, bool isReceiving, SexProps props, bool whoring = false)
 		{
 			try
 			{
-				std_Rash.ThinkAboutDiseases(pawn, partner);
+				parasite_Rash.ThinkAboutDiseases(pawn, partner);
 			}
 			catch (Exception e)
 			{

@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace rjwstd
+namespace rjwparasite
 {
 	public class Hediff_ID : Hediff
 	{
@@ -11,7 +11,7 @@ namespace rjwstd
 		{
 			get
 			{
-				if (!(pawn.health.hediffSet.HasHediff(std_Immunodeficiency.hiv.hediff_def)))
+				if (!(pawn.health.hediffSet.HasHediff(parasite_Immunodeficiency.hiv.hediff_def)))
 					return base.LabelBase;
 				else
 					return "AIDS";
